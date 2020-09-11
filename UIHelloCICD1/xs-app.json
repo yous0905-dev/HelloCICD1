@@ -1,0 +1,14 @@
+{
+  "welcomeFile": "/UIHelloCICD1/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/UIHelloCICD1/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    }
+  ]
+}
